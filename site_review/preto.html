@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GameReviews — Home (preto.html)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <span>🎮 GameReviews</span>
+        <span class="badge">Home — preto.html</span>
+      </div>
+      <nav class="nav">
+        <a href="preto.html">Home</a>
+        <a href="vermelho.html">Valorant</a>
+        <a href="azul.html">Fortnite</a>
+        <a href="amarelo.html">Rainbow Six</a>
+        <a href="verde.html">Perfil</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Reviews rápidos + calendário competitivo</h1>
+      <p>
+        Clique em <b>Ver review</b> para ver a análise e os próximos campeonatos importantes.
+        Use <b>Seguir +</b> para adicionar o jogo no seu perfil.
+      </p>
+      <div class="kpi" style="margin-top:10px;">
+        <span class="pill" id="followingCount">0 jogo(s) seguido(s)</span>
+      </div>
+    </section>
+
+    <main class="grid" id="gamesGrid"></main>
+
+    <footer class="footer">
+      <div class="hr"></div>
+      <div>Feito com HTML/CSS/JS puro — seguindo via localStorage (sem backend).</div>
+    </footer>
+  </div>
+</body>
+</html>
