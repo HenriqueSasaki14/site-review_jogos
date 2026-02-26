@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Perfil — (verde.html)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <span>🟢 Perfil</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="vermelho.html">Valorant</a>
+        <a href="azul.html">Fortnite</a>
+        <a href="amarelo.html">Rainbow Six</a>
+        <a href="verde.html">Perfil</a>
+      </nav>
+    </header>
+
+    <section class="section">
+      <h2>Seu Perfil</h2>
+
+      <div class="profile">
+        <div class="avatar">
+          <img id="avatarImg" alt="Foto do usuário" style="display:none" />
+          <div id="avatarFallback" class="small">Sem foto</div>
+        </div>
+
+        <div style="flex:1; min-width:260px;">
+          <div class="small">Nome</div>
+          <input class="input" id="profileName" placeholder="Ex: Henrique" />
+          <div class="actions" style="margin-top:10px;">
+            <button class="btn primary" id="saveNameBtn" type="button">Salvar nome</button>
+            <label class="btn" for="profilePhoto" style="cursor:pointer;">Enviar foto</label>
+            <input id="profilePhoto" type="file" accept="image/*" style="display:none" />
+          </div>
+          <div class="small" style="margin-top:10px;">
+            A foto fica salva no navegador (localStorage). Se limpar dados do navegador, some.
+          </div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <h3>Jogos que você segue</h3>
+      <div id="followedList"></div>
+
+      <div class="hr"></div>
+
+      <h3>Adicionar/Remover rapidamente</h3>
+      <div id="allGames"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="hr"></div>
+      <div>Seguimentos persistem no navegador via localStorage.</div>
+    </footer>
+  </div>
+</body>
+</html>
