@@ -20,10 +20,28 @@ body {
 body {
     margin: 0;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans";
-    background: radial-gradient(1200px 600px at 30% -10%, rgba(255, 255, 255, .08), transparent 60%),
-        radial-gradient(900px 500px at 110% 10%, rgba(255, 255, 255, .06), transparent 60%),
-        var(--bg);
+    background-color: ;
     color: var(--text);
+}
+
+.body-preto{
+    background-color: black;
+}
+
+.body-vermelho{
+    background-color: red;
+}
+
+.body-azul{
+    background-color: blue;
+}
+
+.body-amarelo{
+    background-color: yellow;
+}
+
+.body-verde{
+    background-color: green;
 }
 
 a {
